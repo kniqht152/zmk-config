@@ -37,15 +37,6 @@
     };
 
     behaviors {
-        bsdelleftshift: bsdelleftshift {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BSDELLEFTSHIFT";
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         bsdelrightshift: bsdelrightshift {
             compatible = "zmk,behavior-mod-morph";
             label = "BSDELRIGHTSHIFT";
@@ -60,7 +51,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Default";
+            display-name = "QWERTY";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -83,7 +74,7 @@
         };
 
         lower_layer {
-            display-name = "Lower (F button)";
+            display-name = "F Buttons";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -105,7 +96,7 @@
         };
 
         raise_layer {
-            display-name = "Raise (Arrow)";
+            display-name = "Arrows";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
