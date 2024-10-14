@@ -36,6 +36,26 @@
         };
     };
 
+    behaviors {
+        bsdelleftshift: bsdelleftshift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSDELLEFTSHIFT";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        bsdelrightshift: bsdelrightshift {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSDELRIGHTSHIFT";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
