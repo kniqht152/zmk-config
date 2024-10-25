@@ -46,6 +46,17 @@
             tapping-term-ms = <100>;
             flavor = "tap-preferred";
         };
+
+        deleteHold: deleteHold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "DELETEHOLD";
+            bindings = <&key_repeat>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <11>;
+        };
     };
 
     keymap {
@@ -107,11 +118,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans              &trans    &trans         &trans    &kp DELETE
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP  &kp LC(LEFT_ARROW)  &kp UP    &kp LC(RIGHT)  &kp HOME  &trans
-&trans      &kp LALT      &trans        &trans        &trans        &kp CLCK                        &kp PG_DN  &kp LEFT            &kp DOWN  &kp RIGHT      &kp END   &trans
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans              &trans    &trans         &trans    &trans
-                          &trans        &trans        &trans        &trans        &trans    &trans  &trans     &trans              &trans    &trans
+&trans    &kp F1      &kp F2     &kp F3       &kp F4       &kp F5                    &kp F6     &kp F7              &kp F8    &kp F9         &kp F10   &deleteHold 0 DEL
+&kp CAPS  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                    &kp PG_UP  &kp LC(LEFT_ARROW)  &kp UP    &kp LC(RIGHT)  &kp HOME  &trans
+&trans    &kp LALT    &trans     &trans       &trans       &trans                    &kp PG_DN  &kp LEFT            &kp DOWN  &kp RIGHT      &kp END   &trans
+&trans    &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans  &trans    &trans  &trans     &trans              &trans    &trans         &trans    &trans
+                      &trans     &trans       &trans       &trans  &trans    &trans  &trans     &trans              &trans    &trans
             >;
 
             sensor-bindings =
