@@ -107,7 +107,7 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans    &kp F1      &kp F2     &kp F3       &kp F4       &kp F5                    &kp F6     &kp F7              &kp F8    &kp F9         &kp F10   &kp DEL
+&trans    &kp F1      &kp F2     &kp F3       &kp F4       &kp F5                    &kp F6     &kp F7              &kp F8    &kp F9         &kp F10   &kp PAUSE_BREAK
 &kp CAPS  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                    &kp PG_UP  &kp LC(LEFT_ARROW)  &kp UP    &kp LC(RIGHT)  &kp HOME  &trans
 &trans    &kp LALT    &trans     &trans       &trans       &trans                    &kp PG_DN  &kp LEFT            &kp DOWN  &kp RIGHT      &kp END   &trans
 &trans    &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans  &trans    &trans  &trans     &trans              &trans    &trans         &trans    &trans
@@ -139,7 +139,7 @@
 
         Numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp UNDER  &kp EQUAL        &kp SLASH        &kp ASTERISK  &kp MINUS  &kp PAUSE_BREAK
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp UNDER  &kp EQUAL        &kp SLASH        &kp ASTERISK  &kp MINUS  &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_N9     &kp PLUS   &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans     &kp KP_N4        &kp KP_N5        &kp KP_N6     &kp PLUS   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3     &trans     &kp KP_ENTER
