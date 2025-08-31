@@ -37,11 +37,12 @@
         numpad {
             bindings = <&lt 4 SPACE>;
             key-positions = <54 53>;
+            timeout-ms = <200>;
         };
 
         Underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <56 53>;
+            key-positions = <53 36>;
             layers = <0>;
         };
     };
