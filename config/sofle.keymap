@@ -135,11 +135,11 @@
 
             display-name = "Adjust";
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &none  &none  &none  &none  &none  &none
-&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none  &none  &none  &none  &none  &none
-&none            &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none  &none  &none  &none  &none  &none
-&none            &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none  &none  &none  &none  &none  &none
-                                  &none            &none            &none            &none            &none              &none  &none  &none  &none  &none
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                               &tog 5  &none  &none  &none  &none  &none
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_EFF                            &none   &none  &none  &none  &none  &none
+&none            &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &none            &none            &none                                      &none   &none  &none  &none  &none  &none
+&none            &none            &none            &none            &none            &none            &rgb_ug RGB_TOG    &none  &none   &none  &none  &none  &none  &none
+                                  &none            &none            &none            &none            &none              &none  &none   &none  &none  &none
             >;
         };
 
@@ -153,6 +153,21 @@
             >;
 
             label = "Numpad";
+        };
+
+        Qwerty_Arrow {
+            display-name = "Qwerty + Arrow";
+            bindings = <
+&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                          &kp N6           &kp N7     &kp N8        &kp N9     &kp N0    &kp BACKSPACE
+&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                           &kp Y            &kp U      &kp UP_ARROW  &kp O      &kp P     &kp BACKSLASH
+&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H            &kp LEFT   &kp DOWN      &kp RIGHT  &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE    &none  &kp N            &kp M      &kp COMMA     &kp DOT    &kp FSLH  &kp ENTER
+                   &kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo 2         &mo 1  &kp RIGHT_SHIFT  &kp RCTRL  &kp RALT      &kp RGUI
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
+                <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
         };
     };
 };
