@@ -24,6 +24,11 @@
             if-layers = <LOWER RAISE>;
             then-layer = <ADJUST>;
         };
+
+        adjust_layer_backup {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
     };
 
     combos {
@@ -156,7 +161,7 @@
         };
 
         Qwerty_Arrow {
-            display-name = "Qwerty + Arrow";
+            display-name = "Q + A";
             bindings = <
 &kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                          &kp N6           &kp N7     &kp N8        &kp N9     &kp N0    &kp BACKSPACE
 &kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                           &kp Y            &kp U      &kp UP_ARROW  &kp O      &kp P     &kp BACKSLASH
