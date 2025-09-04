@@ -43,7 +43,7 @@
 
         Underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <53 36>;
+            key-positions = <11 56>;
             layers = <0>;
         };
     };
