@@ -45,6 +45,7 @@
             bindings = <&kp UNDERSCORE>;
             key-positions = <11 56>;
             layers = <0>;
+            slow-release;
         };
     };
 
