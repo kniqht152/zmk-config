@@ -38,7 +38,7 @@
             bindings = <&lt 4 SPACE>;
             key-positions = <54 36>;
             slow-release;
-            timeout-ms = <500>;
+            layers = <0 4 2>;
         };
 
         Underscore {
