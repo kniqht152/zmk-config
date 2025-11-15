@@ -34,17 +34,9 @@
     combos {
         compatible = "zmk,combos";
 
-        numpad {
+        cmb_numpad {
             bindings = <&lt 4 SPACE>;
             key-positions = <54 36>;
-            slow-release;
-            layers = <0 4 2>;
-        };
-
-        Underscore {
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <11 56>;
-            layers = <0>;
             slow-release;
         };
     };
