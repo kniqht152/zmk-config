@@ -36,7 +36,6 @@
 
         cmb_numpad {
             bindings = <&lt 4 SPACE>;
-            flavor = "hold-preferred";
             key-positions = <54 36>;
             slow-release;
         };
