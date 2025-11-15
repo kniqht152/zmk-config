@@ -36,7 +36,7 @@
 
         numpad {
             bindings = <&lt 4 SPACE>;
-            key-positions = <54 53>;
+            key-positions = <54 36>;
             slow-release;
             timeout-ms = <500>;
         };
