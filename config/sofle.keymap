@@ -35,7 +35,7 @@
         compatible = "zmk,combos";
 
         cmb_numpad {
-            bindings = <&lt 4 SPACE>;
+            bindings = <&lt 4 LEFT_SHIFT>;
             key-positions = <54 36>;
             slow-release;
         };
@@ -147,7 +147,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &kp UNDER  &kp EQUAL        &kp SLASH        &kp ASTERISK  &kp MINUS  &kp BACKSPACE
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_N9     &kp PLUS   &kp PAUSE_BREAK
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &kp KP_N4        &kp KP_N5        &kp KP_N6     &kp PLUS   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans     &kp KP_N4        &kp KP_N5        &kp KP_N6     &kp PLUS   &kp PRINTSCREEN
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp KP_NUMBER_1  &kp KP_N2        &kp KP_N3     &trans     &kp KP_ENTER
                 &trans  &trans  &trans  &trans  &trans    &trans  &trans     &kp KP_N0        &kp KP_N0        &kp KP_DOT
             >;
